@@ -1,0 +1,228 @@
+
+:root {
+    --accent: #5ca6af;
+    --light-bg: #f2f9fa;
+    font-family: sans-serif;
+}
+
+
+.divider {
+    border-bottom: dashed 1px var(--accent);
+    width: 100% !important;
+    display: block;
+    margin: 10px 0px 20px 0px;
+}
+
+
+/* FONTS, LINKS */
+
+h1 {
+    color: var(--accent);
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+h3 {
+    color: var(--accent);
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+
+/* LISTS */
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+/* LAYOUT: Flexbox */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+header {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.duration-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    color: var(--accent);
+    font-style: italic;
+}
+
+
+/* LAYOUT: Dimensions, Margin, Padding */
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-right: 50px;
+}
+
+body {
+    padding: 4%;
+}
+
+
+
+
+
+
+/* HEADER - Headshot, Name, Title, Intro */
+
+
+header {
+    margin-bottom: 50px;
+}
+
+.headshot {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.intro {
+    background-color: var(--light-bg);
+    padding: 30px 40px 30px 50px;
+}
+
+
+.headshot > img {
+    width: 80%;
+}
+
+
+
+/* SIDEBAR - Contact, Skills */
+
+
+.contact {
+    padding: 30px 30px 30px 30px;
+}
+
+.skills > div > h3, #skills-title {
+    margin-bottom: 0px;
+}
+
+.skills {
+    background-color: var(--light-bg);
+    padding: 20px 30px 20px 30px;
+}
+
+.skills > div { 
+    margin-bottom: 30px;
+}
+
+.fa {   /* Contact Icons */
+    font-size: 22px !important;
+    color: var(--accent);
+}
+
+.skill {
+    background-color: var(--accent);
+    display: inline;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: white;
+    transition: opacity .3s;
+}
+
+.skill:hover {
+    opacity: .6;
+}
+
+
+/* MAIN CONTENT - Work Experience, Education */
+
+
+.jobs {
+    width: 100%; 
+}
+
+.job {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.degree {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .intro, .headshot {
+        margin-top: 30px;
+    }
+
+    .intro > h1, h2 {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .skills {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
