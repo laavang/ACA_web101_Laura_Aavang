@@ -1,0 +1,238 @@
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+body {
+    margin: 2%;
+    overflow-x: hidden;
+}
+
+
+
+/*  =====================  HEADER (Headshot, Title, Nav Links)  =====================  */ 
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
+/*  =====================  HEADSHOT  =====================  */ 
+
+
+
+.headshot {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.headshot > img {
+    width: 100%;
+    max-width: 350px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .3s;
+}
+
+.headshot > img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: .3s;
+}
+
+@media (min-width: 768px) {
+
+    .headshot > img {
+        max-width: 400px; 
+    }
+
+    .headshot {
+        margin-top: 4vh;
+    }
+}
+
+@media (min-height: 680) {
+
+    .headshot {
+    margin-top: 0px;
+    }
+
+}
+
+
+
+/*  =====================  TITLE  =====================  */
+
+/* h1 = Name, h2 = occupations */
+
+
+
+.title {
+    margin-bottom: 40px; 
+}
+
+.title > h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #424242;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.title > h2 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.title > h2 > span {
+    margin-right: 7px; 
+}
+
+
+@media (min-width: 768px) {
+
+    .title {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+/*  =====================  NAV  =====================  */
+
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 200px;
+    border-bottom: 1px solid #d9d9d9;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    transition: letter-spacing: .5s;
+}
+
+.nav-link > a {
+    font-size: 1.4rem;
+}
+
+
+.divider {
+    border-bottom: 15px solid #ececec;
+    width: 90%;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+
+.nav-link:last-child {
+    border-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        border-bottom: 0px;
+        letter-spacing: 3px;
+    }
+    
+    .nav-link > a:hover {
+        border-bottom: 1px solid rgb(128,128,128,.7);
+        padding-bottom: 6px;
+    }
+
+}
+
+
+
+/*  =====================  SOCIAL  =====================  */
+
+
+
+.social {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.social-link > a {
+    font-size: 2.3rem;
+    color: ##818181;
+}
+
+.social-link {
+    margin-right: 30px;
+}
+
+.social-link:last-child {
+    margin-right: 0px;
+}
+
+
+
+/*  =====================  DIVIDERS  =====================  */
+
+
+
+nav > .divider {
+    margin: 5px auto 0px auto;
+}
+
+.divider {
+    max-width: 895px;
+}
+
+@media (min-width: 768px) {
+
+    nav > .divider {
+        display: none;
+    }
+}
