@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: url("./img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 200px 1fr 1fr; 
+    grid-template-areas: 
+    "greeting greeting"
+    "date time"
+    "calculator to-do";
+    grid-gap: 20px;
+    margin: 50px auto auto auto;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.greeting {
+    grid-area: greeting;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.date {
+    grid-area: date;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.time {
+    grid-area: time;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.calculator {
+    grid-area: calculator;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.to-do {
+    grid-area: to-do;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+.date > img {
+    max-height: 300px;
+}
+
+.time > img {
+    height: 300px;
+}
+
+.calculator > img {
+    height: 350px;
+}
+
+.notepad > img {
+    height: 300px;
+}
+
