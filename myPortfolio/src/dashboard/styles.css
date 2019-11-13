@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,67 +12,17 @@ html {
     background-size: cover;
   }
 
-body {
-    display: grid;
-    grid-template-columns: 50% 50%; 
-    grid-template-rows: 200px 1fr 1fr; 
-    grid-template-areas: 
-    "greeting greeting"
-    "date time"
-    "calculator to-do";
-    grid-gap: 20px;
-    margin: 50px auto auto auto;
-    max-width: 900px;
-    justify-content: space-between;
-}
-
-.greeting {
-    grid-area: greeting;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: auto;
-    justify-self: center;
-    align-self: center;
-}
-
-.date {
-    grid-area: date;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-}
-
-.time {
-    grid-area: time;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-}
-
-.calculator {
-    grid-area: calculator;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-}
-
-.to-do {
-    grid-area: to-do;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-}
 
 h1 {
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+
+
+/* ======================= WIDGET PLACEHOLDER IMAGES ======================= */
 
 
 
@@ -80,14 +31,101 @@ h1 {
 }
 
 .time > img {
-    height: 300px;
+    max-height: 300px;
 }
 
 .calculator > img {
-    height: 350px;
+    max-height: 350px;
 }
 
 .notepad > img {
-    height: 300px;
+    max-height: 300px;
 }
 
+
+
+/* ======================= CSS GRID LAYOUT ======================= */
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 200px 350px 300px 400px 400px; 
+    grid-template-areas: 
+    "greeting"
+    "date"
+    "time"
+    "calculator"
+    "to-do";
+    margin: 50px auto 100px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+/* ---- GRID AREAS ---- */
+
+
+.greeting {
+    grid-area: greeting;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.date {
+    grid-area: date;
+    justify-self: center;
+    align-self: center;
+}
+
+.time {
+    grid-area: time;
+    justify-self: center;
+    align-self: center;
+}
+
+.calculator {
+    grid-area: calculator;
+    justify-self: center;
+    align-self: center;
+}
+
+.to-do {
+    grid-area: to-do;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+/* ======================= MEDIA QUERIES for TABLET & DESKTOP ======================= */
+
+
+
+
+@media (min-width: 800px) {
+
+    body {
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: 200px 1fr 1fr; 
+        grid-template-areas: 
+        "greeting greeting"
+        "date time"
+        "calculator to-do";
+    }
+
+
+    h1 {
+        color: white;
+        font-size: 80px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+}
