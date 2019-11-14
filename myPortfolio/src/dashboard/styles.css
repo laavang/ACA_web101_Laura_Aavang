@@ -1,0 +1,131 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: url("./img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+h1 {
+    color: white;
+    font-size: 75px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+/* ======================= WIDGET PLACEHOLDER IMAGES ======================= */
+
+
+
+.date > img {
+    max-height: 300px;
+}
+
+.time > img {
+    max-height: 300px;
+}
+
+.calculator > img {
+    max-height: 350px;
+}
+
+.notepad > img {
+    max-height: 300px;
+}
+
+
+
+/* ======================= CSS GRID LAYOUT ======================= */
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 200px 350px 300px 400px 400px; 
+    grid-template-areas: 
+    "greeting"
+    "date"
+    "time"
+    "calculator"
+    "to-do";
+    margin: 50px auto 100px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+/* ---- GRID AREAS ---- */
+
+
+.greeting {
+    grid-area: greeting;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.date {
+    grid-area: date;
+    justify-self: center;
+    align-self: center;
+}
+
+.time {
+    grid-area: time;
+    justify-self: center;
+    align-self: center;
+}
+
+.calculator {
+    grid-area: calculator;
+    justify-self: center;
+    align-self: center;
+}
+
+.to-do {
+    grid-area: to-do;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+/* ======================= MEDIA QUERIES for TABLET & DESKTOP ======================= */
+
+
+
+
+@media (min-width: 800px) {
+
+    body {
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: 200px 1fr 1fr; 
+        grid-template-areas: 
+        "greeting greeting"
+        "date time"
+        "calculator to-do";
+    }
+
+
+    h1 {
+        color: white;
+        font-size: 80px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+}
