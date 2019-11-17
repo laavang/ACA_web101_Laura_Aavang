@@ -46,7 +46,7 @@ nav a:hover {
     justify-content: flex-end;
     align-items: center;
     background-color: rgb(0,0,0,1);
-    background-image: url('./img/hero.jpg');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     margin-bottom: 100px;
 }
