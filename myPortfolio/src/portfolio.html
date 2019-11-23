@@ -6,17 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/portfolio-styles.css" </head> <body>
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100|Raleway:200|Raleway:300|Raleway:400|Raleway:500|Raleway:600|Raleway:700|Raleway:800|Raleway:900"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9aecf83c3.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <ul>
-        <li><a href="../index.html">Personal Landing Page</a></li>
-      <li><a href="resume.html">Mock Resume</a></li>
-      <li><a href="blog.html">Static Blog</a></li>
-      <li><a href="nasa.html">NASA Landing Page</a></li>
-      <li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="hair-salon.html">Salon Homepage</a></li>
-    </ul>
+    <header class="hero">
+        <h1>Class Portfolio</h1>
+    </header>
+    <h2>Exercises</h2>
+    <div class="class-exercises">
+        <div class="iframe-container">
+            <iframe src="resume.html"></iframe>
+            <p><a href="resume.html">Resume <i class="fas fa-eye"></i></a></p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="blog.html"></iframe>
+            <p><a href="blog.html">Static Blog <i class="fas fa-eye"></i></a></p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="nasa.html"></iframe>
+            <p><a href="nasa.html">Landing Page - NASA <i class="fas fa-eye"></a></i></p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="dashboard.html"></iframe>
+            <p><a href="dashboard.html">CSS Grid Dashboard Template <i class="fas fa-eye"></a></i></p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="hair-salon.html"></iframe>
+            <p><a href="hair-salon.html">Landing Page - Salon <i class="fas fa-eye"></a></i></p>
+        </div>
+    </div>
+    <h2>Videos</h2>
+    <div class="videos">
+        <div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/BhaH3F9DCQk"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+        <div class="video-container">
+        <video width="300" height="150" controls>
+            <source src="../videos/Extension.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support videos.
+        </video>
+    </div>
+    </div>
+    <h2>Contact</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" name="form-name"></input>
+        <label>Email</label>
+        <input type="email" name="form-email"></input>
+        <label>Location</label>
+        <input type="text" name="form-location"></input>
+        <label>Message</label>
+        <textarea name="form-message"></textarea>
+        <div class="row">
+            <button type="reset" value="Reset" name="reset">Reset</button>
+            <button type="button" value="Submit" name="submit">Submit</button>
+        </div>
+    </form>
 </body>
 
 </html>
