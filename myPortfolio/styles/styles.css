@@ -34,6 +34,15 @@ header {
 
 }
 
+.narwhal {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    left: 200%;
+    animation: narwahl-slide 10s;
+    -webkit-animation: narwahl-slide 10s;
+}
+
 
 
 /*  =====================  HEADSHOT  =====================  */ 
@@ -236,4 +245,20 @@ nav > .divider {
     nav > .divider {
         display: none;
     }
+}
+
+
+/* ===================== KEYFRAMES ===================== */
+
+
+@keyframes narwahl-slide {
+
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 200%;
+    }
+
 }
