@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="./styles/tower-of-hanoi-styles.css">
+    <!-- <link rel="stylesheet" href="./styles/animate.css" -->
+</head>
+<body>
+    <div class="gameboard">
+        <div class="column" id="column1">
+            <div class="pole" id="pole1"></div>
+            <div class="ring animated fadeInDown" id="redRing"></div>
+            <div class="ring animated fadeInDown" id="blueRing"></div>
+            <div class="ring animated fadeInDown" id="greenRing"></div>
+        </div>
+        <div class="column" id="column2">
+            <div class="pole" id="pole2"></div>
+        </div>
+        <div class="column" id="column3">
+            <div class="pole" id="pole3"></div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="./scripts/towerOfHanoi.js"></script>
+</html>

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.gameboard {
+    margin-top: 20%;
+    width: 800px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 60px solid black;
+}
+
+.column {
+    /* background-color: red; */
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pole {
+    position: absolute;
+    width: 10px;
+    height: 120px;
+    z-index: -1;
+    background-color: black;
+}
+
+.ring {
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+#greenRing {
+    width: 150px;
+    background: green;
+}
+
+#blueRing {
+    width: 100px;
+    background: blue;
+}
+
+#redRing{
+    width: 50px;
+    background: red;
+}
+
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+    -webkit-transform: translate3d(0, -150px, 0);
+    transform: translate3d(0, -150px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    -webkit-transform: translate3d(0, -150px, 0);
+    transform: translate3d(0, -150px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
