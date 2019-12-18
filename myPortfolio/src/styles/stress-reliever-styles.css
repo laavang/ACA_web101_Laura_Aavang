@@ -81,9 +81,13 @@ header > h1 {
     margin-bottom: 3px;
 }
 
+/* Remove blue glow from button when active */
+
 button {
     outline: none;
 }
+
+/* Increase size of clicker button when clicked */
 
 .clicker:active {
     transform: scale(1.2);
@@ -185,9 +189,10 @@ button {
 
     .clicker {
         width: 90vw;
+        max-width: 340px;
         height: 60px;
         border-radius: 50px;
-        font-size: 14px;
+        font-size: 19px;
         padding: 0px 15px 0px 36px;
     }
     
@@ -199,6 +204,16 @@ button {
         font-size: 18px;
         line-height: 180%;
         margin-bottom: 3px;
+    }
+
+    header {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+
+    header > h1 {
+        font-size: 40px;
+        margin-top: 50px;
     }
     
 }
