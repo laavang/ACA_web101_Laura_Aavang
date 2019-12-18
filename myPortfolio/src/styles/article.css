@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+
+
+/* COLORS */
+
+:root {
+    --blue: #33a8dd;
+    --orange: #f45534;
+    --teal: #1bc8b8;
+    --dark: #1C1C1C;
+    --light: #f6f3f5;
+  }
+
+
+.blue {
+    background-color: var(--blue);
+}
+
+.teal {
+    background-color: var(--teal);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-link-wrapper {
+    padding: 30px 40px;
+}
+
+.nav-link-wrapper .flex-end {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link-wrapper > .nav-link {
+    display: inline;
+}
+
+
+.nav-link > a {
+    color: white;
+    text-decoration: none;
+    margin: 30px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover > a {
+    border-bottom: 2px solid white;
+}
+
+
+
+header {
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 190%;
+}
+
+main {
+    background-color: var(--light);
+    transition: background-color 1s;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+    width: 100%;
+}
+
+
+
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+article {
+    position: relative;
+    top: -170px;
+    background: white;
+    max-width: 800px;
+    padding: 50px 70px;
+    -webkit-box-shadow: 0px 0px 42px -18px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 42px -18px rgba(0,0,0,0.47);
+    box-shadow: 0px 0px 42px -18px rgba(0,0,0,0.47);
+    transition: max-width .5s;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    article {
+    max-width: 85%;
+    }
+}
